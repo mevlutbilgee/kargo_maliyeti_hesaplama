@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+body {
+  text-align: center;
+  background-color: #142677fa;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+label {
+  font-size: 1.2rem;
+}
+#sonucBaslik {
+  padding-top: 10px;
+}
+#sonucBox {
+  color: black;
+  background-color: white;
+  width: 750px;
+  height: 280px;
+  margin: auto;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+.box {
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+h1 {
+  margin-top: 0.5rem;
+}
+#pazaryeri {
+  width: 750px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: medium;
+  padding-left: 15px;
+}
+#kargoList {
+  width: 750px;
+  height: 50px;
+  border-radius: 5px;
+}
+#kargoList option {
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  font-size: medium;
+  margin: 6px;
+}
+input {
+  width: 730px;
+  height: 50px;
+  font-size: medium;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+#btnHesaplama {
+  width: 750px;
+  height: 50px;
+  background-color: #3a86ff;
+  font-size: 1.2rem;
+  color: white;
+  border-color: #3a86ff;
+  border-radius: 5px;
+}
+#btnHesaplama:active {
+  color: black;
+  background-color: white;
+}
+#kargoTutar {
+  font-weight: bold;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+  #sonucBox {
+    width: 400px;
+    height: 180px;
+    font-size: 0.65rem;
+  }
+  .box {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  #pazaryeri {
+    width: 400px;
+    height: 40px;
+  }
+  input {
+    width: 370px;
+    height: 35px;
+  }
+  #kargoList {
+    width: 400px;
+    height: 40px;
+  }
+  #btnHesaplama {
+    width: 400px;
+    height: 40px;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+}

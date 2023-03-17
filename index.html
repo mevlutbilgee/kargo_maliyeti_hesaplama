@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kargo Maliyeti Hesapla</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kargo Ücretlerini Hesaplayın!</h1>
+    <p>
+      Kargo maliyeti hesaplama aracımız ile satış yaptığınız pazaryerindeki
+      kargo şirketine göre maliyetinizi ve karlılığınızı kolayca hesaplayın.
+    </p>
+    <br />
+    <label for="pazaryeri">Pazaryeri Seçiniz</label>
+    <br /><br />
+    <select name="pazaryeri" id="pazaryeri">
+      <option value=""></option>
+      <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
+      <option id="pazaryeriHepsiburada" value="Hepsiburada">Hepsiburada</option>
+      <option id="pazaryeriN11" value="n11">n11</option>
+      <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
+        Çiçek Sepeti
+      </option>
+    </select>
+    <br /><br /><br />
+    <label for="kargo">Kargo Şirketi seçiniz</label>
+    <br /><br />
+    <select id="kargoList"></select>
+
+    <br /><br /><br />
+    <label for="enInput">En Giriniz </label>
+    <br />
+    <input type="number" id="enInput" placeholder="cm" />
+    <br /><br />
+    <label for="boyInput">Boy Giriniz </label>
+    <br />
+    <input type="number" id="boyInput" placeholder="cm" />
+    <br /><br />
+    <label for="yukseklikInput">Yükseklik Giriniz </label>
+    <br />
+    <input type="number" id="yukseklikInput" placeholder="cm" />
+    <br /><br /><br />
+
+    <button id="btnHesaplama">Hesapla</button>
+    <br /><br />
+    <div id="sonucBox">
+      <h2 id="sonucBaslik">Hesaplama Sonucu :</h2>
+      <div class="box">
+        <p class="text">Satış Yapılan Pazaryeri :</p>
+        <p class="sonuc" id="secilenPazaryeri"></p>
+      </div>
+      <div class="box">
+        <p class="text">Gönderilecek Kargo Şirketi :</p>
+        <p class="sonuc" id="secilenKargoSirketi"></p>
+      </div>
+      <div class="box">
+        <p class="text">Desi :</p>
+        <p class="sonuc" id="desi"></p>
+      </div>
+      <div class="box">
+        <p class="text">Kargo Maliyeti (KDV dahil) :</p>
+        <p class="sonuc" id="kargoTutar"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
