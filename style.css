@@ -42,6 +42,7 @@ h1 {
   width: 750px;
   height: 50px;
   border-radius: 5px;
+  padding-left: 15px;
 }
 #kargoList option {
   overflow-y: hidden;
