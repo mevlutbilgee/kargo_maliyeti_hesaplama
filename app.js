@@ -34,7 +34,7 @@ pazaryeri.addEventListener("click", () => {
     // --------------------TRENDYOL-------------------------
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     kargoList.innerHTML = `<option value=""></option>
-    <option value="Trendolexpress">Trendyolexpress</option>
+    <option value="Trendyolexpress">Trendyolexpress</option>
       <option value="Aras Kargo">Aras Kargo</option>
       <option value="Yurtiçi Kargo">Yurtiçi Kargo</option>
       <option value="Sürat Kargo">Sürat Kargo</option>
