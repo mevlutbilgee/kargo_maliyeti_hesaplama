@@ -1,4 +1,5 @@
 const btnHesaplama = document.getElementById("btnHesaplama");
+const btnTemizle = document.getElementById("btnTemizle");
 const pazaryeri = document.getElementById("pazaryeri");
 const pazaryeriTrendyol = document.getElementById("pazaryeriTrendyol");
 const pazaryeriHepsiburada = document.getElementById("pazaryeriHepsiburada");
@@ -69,6 +70,9 @@ pazaryeri.addEventListener("click", () => {
       <option value="MNG Kargo">MNG Kargo</option>
       <option value="Sendeo Kargo">Sendeo Kargo</option>`;
   }
+});
+btnTemizle.addEventListener("click", () => {
+  location.reload();
 });
 btnHesaplama.addEventListener("click", () => {
   let desiSonuc = "";

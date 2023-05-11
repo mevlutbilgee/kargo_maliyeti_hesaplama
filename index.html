@@ -8,63 +8,98 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Kargo Ücretlerini Hesaplayın!</h1>
-    <p>
-      Kargo maliyeti hesaplama aracımız ile satış yaptığınız pazaryerindeki
-      kargo şirketine göre maliyetinizi ve karlılığınızı kolayca hesaplayın.
-    </p>
-    <br />
-    <label for="pazaryeri">Pazaryeri Seçiniz</label>
-    <br /><br />
-    <select name="pazaryeri" id="pazaryeri">
-      <option value=""></option>
-      <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
-      <option id="pazaryeriHepsiburada" value="Hepsiburada">Hepsiburada</option>
-      <option id="pazaryeriN11" value="n11">n11</option>
-      <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
-        Çiçek Sepeti
-      </option>
-    </select>
-    <br /><br /><br />
-    <label for="kargo">Kargo Şirketi seçiniz</label>
-    <br /><br />
-    <select id="kargoList"></select>
+    <div class="container">
+      <h1 id="kargo-title">Kargo Ücretlerini Hesaplayın!</h1>
+      <p id="kargo-text">
+        Kargo maliyeti hesaplama aracımız ile satış yaptığınız pazaryerindeki
+        kargo şirketine göre maliyetinizi ve karlılığınızı kolayca hesaplayın.
+      </p>
+      <br />
+      <div class="dropdowndiv">
+        <div class="baslik">
+          <label for="pazaryeri">Pazaryeri Seçiniz</label>
+        </div>
+        <select name="pazaryeri" id="pazaryeri">
+          <option value=""></option>
+          <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
+          <option id="pazaryeriHepsiburada" value="Hepsiburada">
+            Hepsiburada
+          </option>
+          <option id="pazaryeriN11" value="n11">n11</option>
+          <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
+            Çiçek Sepeti
+          </option>
+        </select>
+      </div>
+      <div class="dropdowndiv">
+        <div class="baslik">
+          <label for="kargo">Kargo Şirketi seçiniz</label>
+        </div>
+        <select id="kargoList"></select>
+      </div>
 
-    <br /><br /><br />
-    <label for="enInput">En Giriniz </label>
-    <br />
-    <input type="number" id="enInput" placeholder="cm" />
-    <br /><br />
-    <label for="boyInput">Boy Giriniz </label>
-    <br />
-    <input type="number" id="boyInput" placeholder="cm" />
-    <br /><br />
-    <label for="yukseklikInput">Yükseklik Giriniz </label>
-    <br />
-    <input type="number" id="yukseklikInput" placeholder="cm" />
-    <br /><br /><br />
+      <div class="desi-bilgileri">
+        <div id="en-bilgileri">
+          <div class="baslik">
+            <label for="enInput">En Giriniz </label>
+          </div>
 
-    <button id="btnHesaplama">Hesapla</button>
-    <br /><br />
-    <div id="sonucBox">
-      <h2 id="sonucBaslik">Hesaplama Sonucu :</h2>
-      <div class="box">
-        <p class="text">Satış Yapılan Pazaryeri :</p>
-        <p class="sonuc" id="secilenPazaryeri"></p>
+          <input
+            type="number"
+            class="desiInput"
+            id="enInput"
+            placeholder="cm"
+          />
+        </div>
+
+        <div id="boy-bilgileri">
+          <div class="baslik">
+            <label for="boyInput">Boy Giriniz </label>
+          </div>
+          <input
+            type="number"
+            class="desiInput"
+            id="boyInput"
+            placeholder="cm"
+          />
+        </div>
+        <div id="yukseklik-bilgileri">
+          <div class="baslik">
+            <label for="yukseklikInput">Yükseklik Giriniz </label>
+          </div>
+          <input
+            type="number"
+            class="desiInput"
+            id="yukseklikInput"
+            placeholder="cm"
+          />
+        </div>
       </div>
-      <div class="box">
-        <p class="text">Gönderilecek Kargo Şirketi :</p>
-        <p class="sonuc" id="secilenKargoSirketi"></p>
+      <div class="buttons">
+        <a id="btnTemizle">Temizle</a>
+        <button id="btnHesaplama">Hesapla</button>
       </div>
-      <div class="box">
-        <p class="text">Desi :</p>
-        <p class="sonuc" id="desi"></p>
-      </div>
-      <div class="box">
-        <p class="text">Kargo Maliyeti (KDV dahil) :</p>
-        <p class="sonuc" id="kargoTutar"></p>
+      <div id="sonucBox">
+        <h2 id="sonucBaslik">Hesaplama Sonucu</h2>
+        <div class="box">
+          <p class="text">Satış Yapılan Pazaryeri :</p>
+          <p class="sonuc" id="secilenPazaryeri"></p>
+        </div>
+        <div class="box">
+          <p class="text">Gönderilecek Kargo Şirketi :</p>
+          <p class="sonuc" id="secilenKargoSirketi"></p>
+        </div>
+        <div class="box">
+          <p class="text">Desi :</p>
+          <p class="sonuc" id="desi"></p>
+        </div>
+        <div class="box">
+          <p class="text">Kargo Maliyeti (KDV dahil) :</p>
+          <p class="sonuc" id="kargoTutar"></p>
+        </div>
       </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
