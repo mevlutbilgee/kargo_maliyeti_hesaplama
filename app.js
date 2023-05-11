@@ -14,12 +14,12 @@ const secilenPazaryeri = document.getElementById("secilenPazaryeri");
 const secilenKargoSirketi = document.getElementById("secilenKargoSirketi");
 const desi = document.getElementById("desi");
 const kargoTutar = document.getElementById("kargoTutar");
-pazaryeri.addEventListener("click", () => {
-  if (pazaryeri.value == pazaryeriHepsiburada.value) {
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // ------------------HEPSİBURADA------------------------
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kargoList.innerHTML = `<option value=""></option>
+// pazaryeri.addEventListener("click", () => {});
+if (pazaryeri.value == pazaryeriHepsiburada.value) {
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // ------------------HEPSİBURADA------------------------
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  kargoList.innerHTML = `<option value=""></option>
     <option value="HepsiJET">HepsiJET</option>
       <option value="Aras Kargo">Aras Kargo</option>
       <option value="Yurtiçi Kargo">Yurtiçi Kargo</option>
@@ -30,11 +30,11 @@ pazaryeri.addEventListener("click", () => {
       <option value="Borusan Kargo">Borusan Kargo</option>
       <option value="Horoz Kargo">Horoz Kargo</option>
       <option value="Ceva Kargo">Ceva Kargo</option>`;
-  } else if (pazaryeri.value == pazaryeriTrendyol.value) {
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // --------------------TRENDYOL-------------------------
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kargoList.innerHTML = `<option value=""></option>
+} else if (pazaryeri.value == pazaryeriTrendyol.value) {
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // --------------------TRENDYOL-------------------------
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  kargoList.innerHTML = `<option value=""></option>
     <option value="Trendyolexpress">Trendyolexpress</option>
       <option value="Aras Kargo">Aras Kargo</option>
       <option value="Yurtiçi Kargo">Yurtiçi Kargo</option>
@@ -46,11 +46,11 @@ pazaryeri.addEventListener("click", () => {
       <option value="Borusan Kargo">Borusan Kargo</option>
       <option value="Horoz Kargo">Horoz Kargo</option>
       <option value="Ceva Kargo">Ceva Kargo</option>`;
-  } else if (pazaryeri.value == pazaryeriCiceksepeti.value) {
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // -------------------ÇİÇEK SEPETİ----------------------
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kargoList.innerHTML = `<option value=""></option>
+} else if (pazaryeri.value == pazaryeriCiceksepeti.value) {
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // -------------------ÇİÇEK SEPETİ----------------------
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  kargoList.innerHTML = `<option value=""></option>
       <option value="Aras Kargo">Aras Kargo</option>
       <option value="Yurtiçi Kargo">Yurtiçi Kargo</option>
       <option value="Sürat Kargo">Sürat Kargo</option>
@@ -58,19 +58,19 @@ pazaryeri.addEventListener("click", () => {
       <option value="PTT Kargo">PTT Kargo</option>
       <option value="MNG Kargo">MNG Kargo</option>
       <option value="Sendeo Kargo">Sendeo Kargo</option>`;
-  } else if (pazaryeri.value == pazaryeriN11.value) {
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // -----------------------N11---------------------------
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kargoList.innerHTML = `<option value=""></option>
+} else if (pazaryeri.value == pazaryeriN11.value) {
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // -----------------------N11---------------------------
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  kargoList.innerHTML = `<option value=""></option>
       <option value="Aras Kargo">Aras Kargo</option>
       <option value="Yurtiçi Kargo">Yurtiçi Kargo</option>
       <option value="Sürat Kargo">Sürat Kargo</option>
       <option value="PTT Kargo">PTT Kargo</option>
       <option value="MNG Kargo">MNG Kargo</option>
       <option value="Sendeo Kargo">Sendeo Kargo</option>`;
-  }
-});
+}
+
 btnTemizle.addEventListener("click", () => {
   location.reload();
 });
