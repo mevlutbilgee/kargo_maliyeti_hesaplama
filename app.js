@@ -14,7 +14,7 @@ const secilenPazaryeri = document.getElementById("secilenPazaryeri");
 const secilenKargoSirketi = document.getElementById("secilenKargoSirketi");
 const desi = document.getElementById("desi");
 const kargoTutar = document.getElementById("kargoTutar");
-pazaryeri.addEventListener("click", () => {
+pazaryeri.addEventListener("change", () => {
   if (pazaryeri.value == pazaryeriHepsiburada.value) {
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // ------------------HEPSİBURADA------------------------
