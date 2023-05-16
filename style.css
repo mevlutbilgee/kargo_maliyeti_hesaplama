@@ -57,6 +57,7 @@ h1 {
 #kargoList {
   width: 499px;
   height: 44px;
+  font-size: 16px;
   border-radius: 8px;
   padding-left: 14px;
 }
